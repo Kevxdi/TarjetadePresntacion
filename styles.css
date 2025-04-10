@@ -1,0 +1,70 @@
+/* Reinicio de márgenes y paddings para evitar inconsistencias entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    background-color: #f2f2f2; /* Color de fondo claro para un diseño limpio */
+    font-family: Arial, sans-serif; /* Fuente */
+}
+
+/* Contenedor principal de la tarjeta */
+.card {
+    position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+    background-color: white; /* Fondo blanco para la tarjeta */
+    border-radius: 1rem; /* Bordes redondeados de 1rem */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    padding: 2rem 3rem; /* Espaciado interno de la tarjeta */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    width: 80vw; /* La tarjeta ocupa el 80% del ancho de la ventana */
+    max-width: 400px; /* Ancho  */
+}
+
+/* Estilos para el título dentro de la tarjeta */
+.title {
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    color: #222; /* Color del texto en un tono oscuro */
+    font-weight: bold; /* Texto en negrita */
+    line-height: 1.4; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Estilos para la imagen de perfil */
+.profile-img {
+    position: absolute; /* Posiciona la imagen de forma absoluta dentro de la tarjeta */
+    top: -2rem; /* Desplaza la imagen hacia arriba fuera del borde superior de la tarjeta */
+    right: -2rem; /* Desplaza la imagen hacia la derecha fuera del borde derecho de la tarjeta */
+    width: 7rem; /* Ancho de la imagen */
+    height: 7rem; /* Altura de ancho de la imagen  */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+    border: 2px solid rgb(124, 38, 38); /* Borde rojo oscuro alrededor de la imagen */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad a la imagen */
+    background-color: white; /* Fondo blanco en la imagen */
+}
+
+/* Estilos para el botón fijo en la parte inferior */
+.fixed-button {
+    position: fixed; /* Fija el botón en la pantalla */
+    bottom: 1rem; /* Espaciado desde la parte inferior de la pantalla */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición para que el botón esté perfectamente centrado */
+    padding: 0.7rem 1.5rem; /* Espaciado interno del botón */
+    background-color: rgb(124, 38, 38); /* Color de fondo rojo oscuro */
+    color: white; /* Color del texto en blanco */
+    border-radius: 0.5rem; /* Bordes redondeados del botón */
+    font-size: 1rem; /* Tamaño de fuente del texto del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave  */
+}
+
+/* Efecto hover para el botón */
+.fixed-button:hover {
+    background-color: rgb(201, 66, 66); /* Cambia el color de fondo a un rojo más claro al pasar el cursor */
+}
