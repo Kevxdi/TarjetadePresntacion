@@ -50,7 +50,7 @@ body {
 }
 
 /* Estilos para el botón fijo en la parte inferior */
-.fixed-button {
+.button {
     position: fixed; /* Fija el botón en la pantalla */
     bottom: 1rem; /* Espaciado desde la parte inferior de la pantalla */
     left: 50%; /* Centra el botón horizontalmente */
